@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Desi Ghee Pakistan - Pure, Traditional & Halal</title>
+    <meta name="description" content="Premium organic desi ghee made from grass-fed cows in Pakistan. Authentic, chemical-free, and perfect for your desi kitchen. Nationwide delivery.">
+    <style>
+        :root {
+            --primary-color: #d4a574;
+            --secondary-color: #8b4513;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background-color: #f4e4bc;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            color: var(--secondary-color);
+        }
+
+        .hero img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b5895a;
+        }
+
+        #products p, #contact p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2em; }
+            nav a { display: block; margin: 5px 0; }
+            .product img { height: 150px; } /* Adjusted for smaller screens */
+        }
+
+        @media (max-width: 480px) {
+            .product { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Organic Desi Ghee Pakistan</h1>
+        <p>Pure Tradition from the Heart of Pakistan</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Authentic Organic Desi Ghee</h1>
+        <p>Handcrafted from grass-fed desi cows in the lush fields of Punjab and Sindh. 100% organic, halal-certified, and free from additives. Elevate your Pakistani cuisine with the rich, nutty flavor of traditional desi ghee.</p>
+        <img src="https://via.placeholder.com/600x300?text=Organic+Desi+Ghee" alt="Organic Desi Ghee Jar">
+        <p><strong>Order Now for Nationwide Delivery!</strong> Available in Lahore, Karachi, Islamabad, and beyond.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a family-owned business in Pakistan, dedicated to preserving the age-old art of making desi ghee. Sourced from local organic farms, our ghee is made using the traditional bilona method – slow-churned for maximum purity and nutrition. Rich in vitamins A, D, E, and K, it's perfect for cooking biryanis, parathas, or even as a health tonic.</p>
+        <ul>
+            <li>100% Organic & Chemical-Free</li>
+            <li>Halal Certified</li>
+            <li>Grass-Fed Cows</li>
+            <li>Supports Local Farmers</li>
+        </ul>
+        <p>Why choose us? In a world of processed fats, our desi ghee brings back the authentic taste of home – just like your nani's kitchen!</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/250x200?text=500g+Jar" alt="500g Organic Desi Ghee">
+                <h3>Organic Desi Ghee - 500g</h3>
+                <p>Perfect for daily use. Price: PKR 1,750</p>
+                <button onclick="handleBuyNow()" aria-label="Buy 500g Organic Desi Ghee">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250x200?text=1000g+Jar" alt="1000g Organic Desi Ghee">
+                <h3>Organic Desi Ghee - 1000g</h3>
+                <p>Family pack for larger meals. Price: PKR 3,500</p>
+                <button onclick="handleBuyNow()" aria-label="Buy 1000g Organic Desi Ghee">Buy Now</button>
+            </div>
+        </div>
+        <p>All products are lab-tested for purity. Free delivery on orders over PKR 2,000 in major cities.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch for orders, queries, or wholesale inquiries. We're here to serve you with the best desi ghee in Pakistan!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required aria-label="Your Name">
+            <input type="email" placeholder="Your Email" required aria-label="Your Email">
+            <input type="tel" placeholder="Your Phone (e.g., 03xx-xxxxxxx)" required aria-label="Your Phone">
+            <textarea placeholder="Your Message (e.g., Order 1kg ghee)" rows="5" required aria-label="Your Message"></textarea>
+            <button type="submit" aria-label="Submit contact form">Send Message</button>
+        </form>
+        <p>
+            Email: ssyedhassanali85@gmail.com | Phone: +923038088803<br>
+            Address: Lahore, Pakistan | Follow us on Instagram @syedhassanali365
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Organic Desi Ghee Pakistan. All rights reserved. Proudly made in Pakistan.</p>
+        <p>Disclaimer: Products are organic but consult a doctor for health advice.</p>
+        <a href="#home" style="color: white; text-decoration: underline;">Back to Top</a>
+    </footer>
+
+    <script>
+        // Function for Buy Now buttons
+        function handleBuyNow() {
+            alert('Order placed! Contact us at +923038088803 for payment via EasyPaisa/JazzCash.');
+        }
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            // Replace with your actual backend endpoint (e.g., EmailJS or a server)
+            // Example: fetch('https://your-backend.com/submit', { method: 'POST', body: formData })
+            // .then(response => response.json())
+            // .then(data => alert('Thank you! We\'ll respond within 24 hours.'))
+            // .catch(error => alert('Error: Please try again later.'));
+            alert('Thank you! We\'ll respond within 24 hours. For urgent orders, call +923038088803.');
+        });
+
+        // Smooth scrolling for nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
